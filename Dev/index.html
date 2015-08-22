@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Artist Jukebox</title>
+
+      <!--Import materialize.css-->
+ <link href="css/materialize.min.css" type="text/css" rel="stylesheet"  media="screen,projection"/> 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/animate.css"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link href="css/main.css" type="text/css" rel="stylesheet">
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+<header>
+
+<!--1.LANDING PAGE-->
+  <div class="full-background valign-wrapper" id="intro">
+    <div class="intro-text center-align col s12">
+      <h2>Artist Jukebox</h2>
+      <h4>Powered by Spotify</h4>
+    </div>
+    <video autoplay loop poster="../Assets/classics.jpg" id="bgvid">
+      <source src="../Assets/videoplayback.webm" type="video/webm">
+      <source src="../Assets/videoplayback.mp4" type="video/mp4">
+    </video>
+    <div class="bottom">
+      <a class="btn-floating btn-large waves-effect waves-light lime"><i class="material-icons" data-navigation-item="2">keyboard_arrow_down</i></a>
+    </div>
+  </div>
+
+<!--SEARCH-->
+  <div class="fixed-action-btn hidden" style="bottom: 45px; right: 47px;">
+    <a class="btn-floating btn-large indigo">
+      <i class="large material-icons searchAgain" data-navigation-item="2">search</i>
+    </a>
+  </div>
+
+</header>
+
+
+<main>
+
+<!--2. SEARCH PAGE-->
+  <section  class="full-background valign-wrapper content-2" id="search">
+    <div class="section-text container">
+          <div class="input-field">
+            <i class="material-icons prefix">search</i>
+            <input id="artistSearch" type="text" data-navigation-item="1">
+            <label for="artistSearch">Artist</label>
+          </div>
+      </form>
+    </div>
+  </section>
+
+
+<!--3. ARTIST PAGE-->
+  <section id="artist" class="hidden content-1">
+     <div class="title">
+        <i class="material-icons">mic</i>
+        <h3>Bio</h3>  
+     </div>
+      
+     <div class="bioimg-container"> 
+        <figure class="effect-bio">
+          <img id="artistImage" class="col s12" alt="Artist Image"/>
+            <figcaption>
+              <h2 id="artistName"></h2>
+              <p>
+                <a id="viewMoreBio"></a>
+              </p>
+            </figcaption>     
+        </figure>
+        <!-- <div id="twitter">
+          <a class="twitter-timeline" href="#" data-widget-id="624260310212419584" data-screen-name:"#" data-chrome:"nofooter noborders"></a>
+        </div> -->
+        </div>  
+      </div>
+    </div>
+
+  </section>
+
+
+
+<!--4. TOP TRACKS PAGE-->
+   <section id="top10tracks" class="full-background hidden content-3">
+       <div class="section-header">
+          <div class="title"> 
+            <i class="material-icons">library_music</i> 
+            <h3>Top Tracks</h3>
+          </div>
+      </div>
+
+      <div class="tabletrack">
+        <table>
+          <thead>
+            <tr>
+              <th data-field="id">#</th>
+              <th data-field="album">Album</th>
+              <th data-field="track">Track</th>
+              <th data-field="duration">Duration</th>
+              <th data-field="play">Play</th>
+            </tr>
+          </thead>
+          <tbody id="topTracks"></tbody>
+        </table>  
+      </div> 
+
+      <div class="viewMoreTracks">
+        <a href="#" id="topTracksMore" data-navigation-item="3">View More</a>
+      </div>
+      <div class="viewLessTracks">
+        <a href="#" id="topTracksLess" data-navigation-item="3">View Less</a>
+      </div>
+   </section>
+
+<!--5. ALBUMS PAGE-->
+
+   <section id="artistContent" class="hidden">
+     <div class="title"> 
+         <i class="material-icons">album</i> 
+         <h3>Albums</h3>
+     </div>
+      <div id="albums" class="clearfix full-background">      
+      </div>
+  </section>
+
+
+<!--6. RELATED ARTISTS PAGE-->
+  <div id="relatedAs" class="title clearfix hidden"> 
+      <i class="material-icons">music_note</i>
+      <h3>Related Artists</h3>
+  </div>
+  <section id="relatedArtists" class="clearfix">  
+  </section>
+
+
+      <!--JS FILES-->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script src="js/jquery.tmpl.min.js"></script>
+      <script src="js/materialize.min.js"></script>
+      <script src="js/spotify-web-api.js"></script>
+      <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+      <script src="js/localstoragedb.min.js"></script>
+      <script src="js/spotifykeys.js"></script>
+      <script src="js/autocomplete.js"></script>
+      <script src="src/js/main.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>      
+    </body>
+  </html>

@@ -1,0 +1,855 @@
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*------
+---PAGE ELEMENTS--
+------*/
+.full-background {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-color: #000;  
+  z-index: 1;
+}
+
+body{
+  color: #fff;
+}
+
+main h3{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+
+.bottom{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.material-icons{
+  font-size: 24px;
+}
+
+/*------
+---HEADER--
+------*/
+header h2{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size:8em;
+  text-align:center;
+}
+
+header h4{
+  font-weight: 200;
+  font-size:2em;
+}
+
+video#bgvid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../Assets/classics.jpg) no-repeat;
+  background-size: cover;
+}
+
+/*------
+---SEARCH--
+------*/
+
+/* label color */
+   .input-field label {
+     color: #CDDC39;
+    margin-left:2.25rem;
+   }
+
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #CDDC39; 
+     font-size: 30px;
+     margin-left:2.20rem;
+     font-weight: 400;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     margin-top: 10px;
+     border-bottom: 2px solid #CDDC39;
+     box-shadow: 0 2px 0 0 #CDDC39;
+    font-size: 40px;
+    font-weight: 200;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #CDDC39;
+     box-shadow: 0 1px 0 0 #CDDC39;
+
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #CDDC39;
+     box-shadow: 0 1px 0 0 #CDDC39;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #CDDC39;
+   }
+
+   .hidden {
+  display: none;
+}
+
+/*------
+---TITLE--
+------*/
+
+.intro-text{
+  width:100%;
+}
+
+.title{
+  width: 100%;
+  background-color: #1a237e;
+  margin:0 auto;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.title i, h3{
+  text-align: center;
+  width: 100%;
+  color:#fff;
+}
+
+.title i{
+  margin: 25px auto 0;
+  font-size: 36px;
+}
+
+.title h3{
+  font-size: 2em;
+  font-weight:800;
+  margin: 0 auto 25px;
+}
+
+/*------
+---BIO--
+------*/
+
+#artist{
+  background-color:#fff;
+  color:#000;
+}
+
+#artist i{
+  color:#fff;
+}
+
+/*-----------------*/
+/***** ARTIST PAGE *****/
+/*-----------------*/
+
+.effect-bio{
+  margin:1em auto 1em;
+  float:none;
+}
+
+.effect-bio p{
+  font-size:85%;
+  color: #d4e157;
+}
+/*.bioimg-container{
+  width:100%;
+  margin:2em auto 2em;
+}
+
+figure.effect-bio {
+  background: #162633;
+  text-align: left;
+}
+
+figure.effect-bio img {
+  -webkit-transition: opacity 0.45s;
+  transition: opacity 0.45s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-bio h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-bio p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.5em 7% 0;
+}
+
+figure.effect-bio a {
+  margin: 0 10px;
+  color: #1a237e;
+  font-size: 170%;
+}
+
+figure.effect-bio a:hover,
+figure.effect-bio a:focus
+ {
+  color: #1a237e;
+}
+
+figure.effect-bio p a i {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,50px,0);
+  transform: translate3d(0,50px,0);
+}
+
+figure.effect-bio:hover img {
+  opacity: 0.6;
+}
+
+figure.effect-bio:hover h2 {
+  color: #1a237e;
+  font-weight:800;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-bio:hover p i {
+  opacity: 1;
+  font-color: #1a237e;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-bio:hover p a:first-child i {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect-bio {
+  width:100%;
+}*/
+/*
+#twitter {
+ display: inline-block;
+ width: 49%;
+ padding-top: 10px;
+}
+
+#twitter-widget-0 {
+ height: 322px;
+}
+*/
+/*-----------------*/
+/***** TOP TRACKS *****/
+/*-----------------*/
+
+#top10tracks {
+  margin:0 auto;
+}
+
+
+#top10tracks .title{
+  border:0;
+  width:100%;
+  margin: 0 auto;
+  background-color: #1a237e;
+  text-align:center;
+  color:#000;
+}
+
+#top10tracks .tabletrack{
+  width:70%;
+  margin: 3em auto 3em;
+}
+
+#topTracks img{
+  height:50px;
+  width:50px;
+}
+
+#top10tracks {
+  overflow-y: hidden;
+  position: relative;
+}
+
+.viewLessTracks {
+  display: none;
+  height: 70px;
+  padding: 10px 0px;
+  position: relative;
+  text-align:center;
+}
+
+
+.viewMoreTracks {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  height: 55px;
+  z-index: 10;
+}
+
+/*-----------------*/
+/***** ALBUM *****/
+/*-----------------*/
+#artistContent .full-background{
+  background-color: #fff;
+}
+
+
+.viewMoreAlbums {
+  text-align: center;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+}
+
+#topTracksMore, #topTracksLess, #albumsMore, #bioButton {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #cddc39;
+  color: #ffffff;
+}
+
+#topTracksMore:hover, #topTracksLess:hover, #albumsMore:hover, #bioButton:hover {
+  border: 2px solid #cddc39;
+  background-color: #ffffff;
+  color: #cddc39;
+}
+
+#albums {
+  overflow-y: hidden;
+}
+
+#artistContent .title{
+  margin-top:15px;
+}
+
+#albums{
+  max-height:644px;
+}
+
+#albums figure.effect-apollo {
+  background: #3F53B1;
+  margin: 0;
+}
+
+/*-----------------*/
+/***** RELATED *****/
+/*-----------------*/
+
+#relatedArtists figure.effect-apollo{
+background:#8BC34A;
+margin:0;
+}
+
+/*-------
+ALBUM + RELATED
+---------*/
+
+figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-width: 480px;
+  width: 33.3%;
+  height: 322px; 
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.7;
+}
+
+figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+figure h2 {
+  font-size:2em;
+  word-spacing: -0.15em;
+  font-weight: 200;
+}
+
+figure h2 span {
+  font-weight: 800;
+}
+
+figure h2,
+figure p {
+  margin: 0;
+}
+
+figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-apollo img {
+  opacity: 0.85;
+  width: 100%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+  transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo i {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  margin: 0;
+  padding: 0;
+  max-width: 200px;
+  font-size: 130px;
+  text-align:center;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-apollo h2 {
+  text-align: left;
+}
+
+
+figure.effect-apollo:hover img {
+  opacity: 0.6;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+  -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+  transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    font-weight:800;
+}
+
+figure.effect-apollo:hover i {
+  opacity: .8;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-apollo:hover h2 {
+  font-weight:800;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+
+@media only screen and (max-width: 999px) {
+
+ #albums .full-background {
+    background-color: #fff;  
+    max-height: 644px;
+}
+ 
+  figure {
+    width: 50%;
+}
+
+}
+/*TABLET - PORTRAIT BREAKPOINT*/
+@media only screen and (min-width: 680px) and (max-width: 768px) {
+
+.intro-text h2{x
+  font-size: 15px;
+}
+
+.title{
+  width: 100%;
+  background-color: #1a237e;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.title i{
+  margin: 25px auto 0;
+  font-size: 25px;
+}
+
+.title h3{
+  font-size: 1.5em;
+  font-weight:800;
+  margin: 0 auto 30px;
+}
+
+  #albums{ 
+    overflow-y:visible;
+}
+
+  figure {
+    width: 50%;
+  }
+
+  figure.effect-apollo img {
+  opacity: 0.85;
+  width: 100%;
+  min-width: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
+}
+
+  table, tbody, td, th{
+  font-size:12px;
+}
+
+
+/*MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 679px) {
+
+#album figure.effect-apollo figcaption{
+  font-size: 1em;
+}
+
+#album figure.effect-apollo img{
+  height:250px;
+}
+
+#twitter{
+  width:100%;
+}
+
+#artist{
+  display:none;
+}
+.intro h2{
+  font-size: 15px;
+}
+
+.title{
+  width: 100%;
+  background-color: #1a237e;
+  margin:0px auto;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.title i{
+  margin: 25px auto 0;
+  font-size: 25px;
+}
+
+.title h3{
+  font-size: 1.5em;
+  font-weight:800;
+  margin: 0 auto 30px;
+}
+
+.topTracks tr td{
+  font-size:12px;
+}
+
+.viewMoreTracks{
+  bottom:-2%;
+}
+
+/*BIO*/
+#viewMoreBio{
+  text-align: center;
+  margin-bottom:3em;
+}
+
+#artist img{
+  max-height:55vh;
+}
+
+#artist h2{
+  color: #fff;
+}
+
+/*MUSIC*/
+figure img {
+  position: relative;
+  display: inline-block;
+  min-height: 100%;
+  opacity: 0.7;
+  min-width: 0;
+  width:50%;
+}
+
+.effect-apollo{
+  min-width: 0;
+ height: 50%;
+ width: 50%;
+}
+
+  #albums{
+    background-color: #fff;  
+    overflow-y: visible;
+    text-align: center;
+    margin:0 auto;
+}
+
+/*  #relatedArtists{
+    background-color: #fff;  
+  }*/
+
+
+/*VIDEO BREAKPOINT*/
+@media screen and (max-device-width: 800px) {
+body { background: url(classics.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
